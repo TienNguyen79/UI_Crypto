@@ -1,24 +1,33 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Header from "./components/Header";
+import CryptocurrencyPrices from "./components/CryptocurrencyPrices";
+import CryptoPlatform from "./components/CryptoPlatform";
+import CryptoDowload from "./components/CryptoDowload";
+import Blog from "./components/Blog";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React hihi
-        </a>
-        <h1 className="text-red-500">okok</h1>
-      </header>
+    <div>
+      <div className="bg-[#1B004E] ">
+        <Header />
+        <div>
+          <CryptocurrencyPrices />
+        </div>
+      </div>
+
+      <section>
+        <CryptoPlatform />
+        <CryptoDowload />
+      </section>
+
+      <Blog />
+      <Contact />
+      <Footer />
+      {/* <div className="h-[200px]">
+        <h1>okoko</h1>
+      </div> */}
     </div>
   );
 }
